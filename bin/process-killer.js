@@ -68,7 +68,7 @@ function header() {
   );
   console.log(
     c(
-      "               PROCESS KILLER UTILITY v1.0.1",
+      "               PROCESS KILLER UTILITY v1.0.8",
       colors.bold + colors.cyan,
     ),
   );
@@ -158,7 +158,7 @@ function showDevInfo() {
   );
   console.log(
     c("║", colors.cyan) +
-      c(" Version           1.0.1", colors.yellow).padEnd(54),
+      c(" Version           1.0.8", colors.yellow).padEnd(54),
   );
   console.log(
     c("║", colors.cyan) + c(" License           MIT", colors.yellow).padEnd(54),

@@ -2,7 +2,7 @@
 
 > A fast, cross-platform utility to safely kill processes using specific ports on Windows, macOS, and Linux.
 
-![npm version](https://img.shields.io/badge/version-1.0.7-blue)
+![npm version](https://img.shields.io/badge/version-1.0.8-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![node version](https://img.shields.io/badge/node->=12.0.0-brightgreen)
 
@@ -184,7 +184,7 @@ sudo fuser -k 3000/tcp
 npm install -g process-killer-cli@latest
 ```
 
-## 📝 What's New in v1.0.7
+## 📝 What's New in v1.0.8
 
 - ✨ Fixed installation documentation
 - 🎨 Beautiful colorized UI with Unicode borders
