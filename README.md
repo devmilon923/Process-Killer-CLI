@@ -1,8 +1,8 @@
-# Port Killer CLI ⚡
+# Process Killer CLI ⚡
 
 > A fast, cross-platform utility to safely kill processes using specific ports on Windows, macOS, and Linux.
 
-![npm version](https://img.shields.io/badge/version-1.0.0-blue)
+![npm version](https://img.shields.io/badge/version-1.0.6-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![node version](https://img.shields.io/badge/node->=12.0.0-brightgreen)
 
@@ -19,13 +19,15 @@
 ## 📦 Installation
 
 ```bash
-npm install -g port-killer-cli
+npm install -g process-killer-cli
 ```
+
+The `-g` flag installs globally, making the command available everywhere.
 
 ## 🚀 Quick Start
 
 ```bash
-port-killer
+process-killer
 ```
 
 Then follow the prompts:
@@ -40,7 +42,7 @@ Then follow the prompts:
 ### Kill Node.js Server
 
 ```bash
-$ port-killer
+$ process-killer
 
 Select your Operating System:
   1) Windows
@@ -70,7 +72,7 @@ You can now start your backend server on this port.
 ### Kill Java Application (Port 8080)
 
 ```bash
-$ port-killer
+$ process-killer
 ...
 Enter the port number you want to stop: 8080
 ✓ Port 8080 has been killed!
@@ -79,7 +81,7 @@ Enter the port number you want to stop: 8080
 ### Kill Python Flask (Port 5000)
 
 ```bash
-$ port-killer
+$ process-killer
 ...
 Enter the port number you want to stop: 5000
 ✓ Port 5000 has been killed!
@@ -87,18 +89,23 @@ Enter the port number you want to stop: 5000
 
 ## 🖥️ Supported Operating Systems
 
+
 | OS          | Status             | Notes                                  |
 | ----------- | ------------------ | -------------------------------------- |
 | **Windows** | ✅ Fully Supported | Uses `netstat`, `tasklist`, `taskkill` |
 | **macOS**   | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser`             |
 | **Linux**   | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser`             |
 
+
 ## 📋 Requirements
+
 
 - **Node.js** >= 12.0.0
 - **npm** or **yarn**
 
+
 ## 🔧 How It Works
+
 
 ### Windows
 
@@ -112,7 +119,9 @@ Enter the port number you want to stop: 5000
 - Uses `ps` to get process name
 - Uses `fuser -k PORT/tcp` to terminate process
 
+
 ## ⚠️ Troubleshooting
+
 
 ### Port Still Shows as In Use
 
@@ -123,7 +132,7 @@ Some ports enter TIME_WAIT state. Wait 30-60 seconds and try again.
 The tool may need elevated privileges:
 
 ```bash
-sudo port-killer
+sudo process-killer
 ```
 
 ### Process Not Found
@@ -142,21 +151,25 @@ netstat -ano | findstr :3000
 lsof -i :3000
 ```
 
-### Port Command Not Found
+### Command Not Found
 
-Make sure you installed it globally:
+Make sure you installed it globally with the `-g` flag:
 
 ```bash
-npm install -g port-killer-cli
+npm install -g process-killer-cli
 ```
+
 
 ## 🗑️ Uninstall
 
+
 ```bash
-npm uninstall -g port-killer-cli
+npm uninstall -g process-killer-cli
 ```
 
+
 ## 📚 Advanced Usage
+
 
 ### Manual Port Killing (Without Tool)
 
@@ -176,15 +189,19 @@ sudo kill -9 12345
 sudo fuser -k 3000/tcp
 ```
 
+
 ## 🔄 Update to Latest Version
 
+
 ```bash
-npm install -g port-killer-cli@latest
+npm install -g process-killer-cli@latest
 ```
 
-## 📝 What's New in v1.0.0
 
-- ✨ Initial release
+## 📝 What's New in v1.0.6
+
+
+- ✨ Fixed installation documentation
 - 🎨 Beautiful colorized UI with Unicode borders
 - 🌍 Cross-platform support (Windows, macOS, Linux)
 - 📋 Interactive OS selection menu
@@ -192,7 +209,9 @@ npm install -g port-killer-cli@latest
 - 📊 Developer information display
 - ⚡ Zero external dependencies
 
+
 ## 🤝 Contributing
+
 
 Contributions are welcome! Feel free to:
 
@@ -200,23 +219,27 @@ Contributions are welcome! Feel free to:
 - Suggest features
 - Submit pull requests
 
-[Visit GitHub Repository](https://github.com/devmilon923/port-killer-cli)
+[Visit GitHub Repository](https://github.com/devmilon923/process-killer-cli)
 
 ## 📄 License
 
-MIT © Milon
+MIT © Milon Mia
 
 This project is open source and available under the MIT License.
 
+
 ## 👨‍💻 Author
+
 
 **Milon Mia**
 
 - GitHub: [@devmilon923](https://github.com/devmilon923)
-- npm: [port-killer-cli](https://www.npmjs.com/package/port-killer-cli)
+- npm: [process-killer-cli](https://www.npmjs.com/package/process-killer-cli)
 - Email: dev.milon923@gmail.com
 
+
 ## 🙏 Support
+
 
 If you found this tool helpful, please:
 
@@ -225,7 +248,9 @@ If you found this tool helpful, please:
 - 🐛 Report issues
 - 💡 Suggest improvements
 
+
 ## FAQ
+
 
 **Q: Is it safe to use?**  
 A: Yes! The tool always asks for confirmation before killing any process.
@@ -242,19 +267,26 @@ A: The tool shows process details before killing, so you can verify.
 **Q: Can I use this in scripts?**  
 A: This tool is interactive. For automation, use OS-specific commands directly.
 
+**Q: Why do I need the -g flag?**  
+A: The `-g` flag installs the tool globally so you can use the `process-killer` command from any folder on your computer.
+
+
 ## 🎓 Learn More
+
 
 - [Node.js Documentation](https://nodejs.org/en/docs/)
 - [npm Documentation](https://docs.npmjs.com/)
 - [Port Management Guide](https://www.howtouselinux.com/linux/lsof-command)
 
+
 ## 📞 Feedback
 
+
 Have questions or suggestions? Open an issue on GitHub:
-[GitHub Issues](https://github.com/devmilon923/port-killer-cli/issues)
+[GitHub Issues](https://github.com/devmilon923/process-killer-cli/issues)
 
 ---
 
-**Made with ❤️ for Backend Developers**
+**Made with ❤️ for Developers**
 
 Happy coding! 🚀

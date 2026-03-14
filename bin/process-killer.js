@@ -67,7 +67,7 @@ function header() {
     c("╔═══════════════════════════════════════════════════════╗", colors.cyan),
   );
   console.log(
-    c("               PORT KILLER UTILITY v1.0.0", colors.bold + colors.cyan),
+    c("               PORT KILLER UTILITY v1.0.1", colors.bold + colors.cyan),
   );
   //   console.log(c("               Tool By Milon", colors.yellow));
   console.log(
@@ -155,7 +155,7 @@ function showDevInfo() {
   );
   console.log(
     c("║", colors.cyan) +
-      c(" Version           1.0.0", colors.yellow).padEnd(54),
+      c(" Version           1.0.1", colors.yellow).padEnd(54),
   );
   console.log(
     c("║", colors.cyan) + c(" License           MIT", colors.yellow).padEnd(54),

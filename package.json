@@ -1,11 +1,11 @@
 {
-  "name": "port-killer-cli",
-  "version": "1.0.0",
+  "name": "process-killer-cli",
+  "version": "1.0.6",
   "description": "A utility to safely find and kill processes using specific ports on Linux/macOS. Perfect for backend developers dealing with port conflicts.",
   "main": "index.js",
   "type": "module",
   "bin": {
-    "port-killer": "./bin/port-killer.js"
+    "process-killer": "./bin/process-killer.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -21,23 +21,24 @@
     "spring-boot",
     "port-conflict"
   ],
-  "author": "Milon",
+  "author": "Milon Mia",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/port-killer-cli.git"
+    "url": "https://github.com/devmilon923/process-killer-cli.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/port-killer-cli/issues"
+    "url": "https://github.com/devmilon923/process-killer-cli/issues"
   },
-  "homepage": "https://github.com/yourusername/port-killer-cli#readme",
+  "homepage": "https://github.com/devmilon923/process-killer-cli#readme",
   "engines": {
     "node": ">=12.0.0"
   },
   "preferGlobal": true,
   "files": [
-    "bin",
-    "lib",
-    "README.md"
+    "bin/index.js",
+    "README.md",
+    "package.json",
+    "LICENSE"
   ]
 }
