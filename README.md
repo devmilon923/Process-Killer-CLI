@@ -14,7 +14,7 @@
 ⚙️ **Zero Dependencies** - Uses only Node.js built-in modules  
 🚀 **Fast** - Kills ports instantly  
 🎨 **Beautiful UI** - Colorized output with Unicode borders  
-📊 **Developer Info** - Shows package info on success  
+📊 **Developer Info** - Shows package info on success
 
 ## 📦 Installation
 
@@ -29,6 +29,7 @@ port-killer
 ```
 
 Then follow the prompts:
+
 1. **Select OS** - Choose your operating system (1=Windows, 2=macOS, 3=Linux)
 2. **Enter Port** - Type the port number (e.g., 3001, 8080, 5000)
 3. **Confirm** - Review the process info and confirm
@@ -37,6 +38,7 @@ Then follow the prompts:
 ## 💡 Common Use Cases
 
 ### Kill Node.js Server
+
 ```bash
 $ port-killer
 
@@ -63,19 +65,10 @@ Do you want to kill this process? (y/n): y
 
 You can now start your backend server on this port.
 
-╔═══════════════════════════════════════════════════════╗
-║      ✨ DEVELOPER INFORMATION ✨                     ║
-╠═══════════════════════════════════════════════════════╣
-║ Developer............ Milon
-║ Tool................ Port Killer CLI
-║ Version............. 1.0.0
-║ License............. MIT
-║ GitHub.............. github.com/devmilon923
-║ LinkedIn.............. linkedin.com/in/devmilon
-╚═══════════════════════════════════════════════════════╝
 ```
 
 ### Kill Java Application (Port 8080)
+
 ```bash
 $ port-killer
 ...
@@ -84,6 +77,7 @@ Enter the port number you want to stop: 8080
 ```
 
 ### Kill Python Flask (Port 5000)
+
 ```bash
 $ port-killer
 ...
@@ -93,11 +87,11 @@ Enter the port number you want to stop: 5000
 
 ## 🖥️ Supported Operating Systems
 
-| OS | Status | Notes |
-|---|--------|-------|
+| OS          | Status             | Notes                                  |
+| ----------- | ------------------ | -------------------------------------- |
 | **Windows** | ✅ Fully Supported | Uses `netstat`, `tasklist`, `taskkill` |
-| **macOS** | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser` |
-| **Linux** | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser` |
+| **macOS**   | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser`             |
+| **Linux**   | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser`             |
 
 ## 📋 Requirements
 
@@ -107,11 +101,13 @@ Enter the port number you want to stop: 5000
 ## 🔧 How It Works
 
 ### Windows
+
 - Uses `netstat -ano` to find process by port
 - Uses `tasklist` to get process name
 - Uses `taskkill /PID X /F` to terminate process
 
 ### macOS & Linux
+
 - Uses `lsof -ti:PORT` to find process by port
 - Uses `ps` to get process name
 - Uses `fuser -k PORT/tcp` to terminate process
@@ -119,29 +115,37 @@ Enter the port number you want to stop: 5000
 ## ⚠️ Troubleshooting
 
 ### Port Still Shows as In Use
+
 Some ports enter TIME_WAIT state. Wait 30-60 seconds and try again.
 
 ### Permission Denied (macOS/Linux)
+
 The tool may need elevated privileges:
+
 ```bash
 sudo port-killer
 ```
 
 ### Process Not Found
+
 Verify the port number is correct using:
 
 **Windows:**
+
 ```bash
 netstat -ano | findstr :3000
 ```
 
 **macOS/Linux:**
+
 ```bash
 lsof -i :3000
 ```
 
 ### Port Command Not Found
+
 Make sure you installed it globally:
+
 ```bash
 npm install -g port-killer-cli
 ```
@@ -157,12 +161,14 @@ npm uninstall -g port-killer-cli
 ### Manual Port Killing (Without Tool)
 
 **Windows:**
+
 ```powershell
 netstat -ano | findstr :3000
 taskkill /PID 12345 /F
 ```
 
 **macOS/Linux:**
+
 ```bash
 lsof -i :3000
 sudo kill -9 12345
@@ -189,6 +195,7 @@ npm install -g port-killer-cli@latest
 ## 🤝 Contributing
 
 Contributions are welcome! Feel free to:
+
 - Report bugs
 - Suggest features
 - Submit pull requests
@@ -205,13 +212,14 @@ This project is open source and available under the MIT License.
 
 **Milon Mia**
 
-- GitHub: [@yourusername](https://github.com/devmilon923)
+- GitHub: [@devmilon923](https://github.com/devmilon923)
 - npm: [port-killer-cli](https://www.npmjs.com/package/port-killer-cli)
 - Email: dev.milon923@gmail.com
 
 ## 🙏 Support
 
 If you found this tool helpful, please:
+
 - ⭐ Star on GitHub
 - 📢 Share with friends
 - 🐛 Report issues
@@ -243,7 +251,7 @@ A: This tool is interactive. For automation, use OS-specific commands directly.
 ## 📞 Feedback
 
 Have questions or suggestions? Open an issue on GitHub:
-[GitHub Issues](https://github.com/yourusername/port-killer-cli/issues)
+[GitHub Issues](https://github.com/devmilon923/port-killer-cli/issues)
 
 ---
 
