@@ -67,7 +67,10 @@ function header() {
     c("╔═══════════════════════════════════════════════════════╗", colors.cyan),
   );
   console.log(
-    c("               PORT KILLER UTILITY v1.0.1", colors.bold + colors.cyan),
+    c(
+      "               PROCESS KILLER UTILITY v1.0.1",
+      colors.bold + colors.cyan,
+    ),
   );
   //   console.log(c("               Tool By Milon", colors.yellow));
   console.log(
@@ -151,7 +154,7 @@ function showDevInfo() {
   );
   console.log(
     c("║", colors.cyan) +
-      c(" Tool              Port Killer CLI", colors.yellow).padEnd(54),
+      c(" Tool              Process Killer CLI", colors.yellow).padEnd(54),
   );
   console.log(
     c("║", colors.cyan) +

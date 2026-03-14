@@ -2,7 +2,7 @@
 
 > A fast, cross-platform utility to safely kill processes using specific ports on Windows, macOS, and Linux.
 
-![npm version](https://img.shields.io/badge/version-1.0.6-blue)
+![npm version](https://img.shields.io/badge/version-1.0.7-blue)
 ![license](https://img.shields.io/badge/license-MIT-green)
 ![node version](https://img.shields.io/badge/node->=12.0.0-brightgreen)
 
@@ -89,23 +89,18 @@ Enter the port number you want to stop: 5000
 
 ## 🖥️ Supported Operating Systems
 
-
 | OS          | Status             | Notes                                  |
 | ----------- | ------------------ | -------------------------------------- |
 | **Windows** | ✅ Fully Supported | Uses `netstat`, `tasklist`, `taskkill` |
 | **macOS**   | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser`             |
 | **Linux**   | ✅ Fully Supported | Uses `lsof`, `ps`, `fuser`             |
 
-
 ## 📋 Requirements
-
 
 - **Node.js** >= 12.0.0
 - **npm** or **yarn**
 
-
 ## 🔧 How It Works
-
 
 ### Windows
 
@@ -119,9 +114,7 @@ Enter the port number you want to stop: 5000
 - Uses `ps` to get process name
 - Uses `fuser -k PORT/tcp` to terminate process
 
-
 ## ⚠️ Troubleshooting
-
 
 ### Port Still Shows as In Use
 
@@ -159,17 +152,13 @@ Make sure you installed it globally with the `-g` flag:
 npm install -g process-killer-cli
 ```
 
-
 ## 🗑️ Uninstall
-
 
 ```bash
 npm uninstall -g process-killer-cli
 ```
 
-
 ## 📚 Advanced Usage
-
 
 ### Manual Port Killing (Without Tool)
 
@@ -189,17 +178,13 @@ sudo kill -9 12345
 sudo fuser -k 3000/tcp
 ```
 
-
 ## 🔄 Update to Latest Version
-
 
 ```bash
 npm install -g process-killer-cli@latest
 ```
 
-
-## 📝 What's New in v1.0.6
-
+## 📝 What's New in v1.0.7
 
 - ✨ Fixed installation documentation
 - 🎨 Beautiful colorized UI with Unicode borders
@@ -209,9 +194,7 @@ npm install -g process-killer-cli@latest
 - 📊 Developer information display
 - ⚡ Zero external dependencies
 
-
 ## 🤝 Contributing
-
 
 Contributions are welcome! Feel free to:
 
@@ -227,9 +210,7 @@ MIT © Milon Mia
 
 This project is open source and available under the MIT License.
 
-
 ## 👨‍💻 Author
-
 
 **Milon Mia**
 
@@ -237,9 +218,7 @@ This project is open source and available under the MIT License.
 - npm: [process-killer-cli](https://www.npmjs.com/package/process-killer-cli)
 - Email: dev.milon923@gmail.com
 
-
 ## 🙏 Support
-
 
 If you found this tool helpful, please:
 
@@ -248,9 +227,7 @@ If you found this tool helpful, please:
 - 🐛 Report issues
 - 💡 Suggest improvements
 
-
 ## FAQ
-
 
 **Q: Is it safe to use?**  
 A: Yes! The tool always asks for confirmation before killing any process.
@@ -270,17 +247,13 @@ A: This tool is interactive. For automation, use OS-specific commands directly.
 **Q: Why do I need the -g flag?**  
 A: The `-g` flag installs the tool globally so you can use the `process-killer` command from any folder on your computer.
 
-
 ## 🎓 Learn More
-
 
 - [Node.js Documentation](https://nodejs.org/en/docs/)
 - [npm Documentation](https://docs.npmjs.com/)
 - [Port Management Guide](https://www.howtouselinux.com/linux/lsof-command)
 
-
 ## 📞 Feedback
-
 
 Have questions or suggestions? Open an issue on GitHub:
 [GitHub Issues](https://github.com/devmilon923/process-killer-cli/issues)
